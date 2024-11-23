@@ -2041,6 +2041,12 @@ html {
   filter: brightness(120%);
 }
 
+.about-section{
+  background-image: url('/assets/images/about/aboutbg.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .main--wrapper4 {
   z-index: 2;
   position: relative;
@@ -7173,7 +7179,7 @@ img.map-about-tab {
 }
 
 .btn--styleOne {
-  border-radius: 0;
+  border-radius: 50% !important;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 600;
