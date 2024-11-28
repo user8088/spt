@@ -6,6 +6,7 @@
     <title>Sponsor a tree</title>
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to your CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link
@@ -13,66 +14,67 @@
   href="https://unpkg.com/swiper/swiper-bundle.min.css"
 />
 </head>
-<body>
+<body style="background-color: whitesmoke;">
 <!-- Header -->
-<header class="header header--styleOne sticky" >
-    <div id="sticky-placeholder"></div>
-    <div class="container container--custom">
-        <div class="row">
-            <div class="col-12">
-                <div class="header__wrapper">
-                    <div class="header__logo">
-                        <a href="/home" class="header__logo__link">
-                            <img src="assets/images/logos/logo.png" alt="Gainioz" class="header__logo__image" width="200" >
-                        </a>
-                    </div>
-                    <div class="header__menu mt-0 mt-md-5 mt-lg-5">
-                        <nav class="mainMenu">
-                            <ul>
-                                <li><a href="/home">Home</a></li>
-                                <li><a href="about-us.html">About</a></li>
-                                <li><a href="/donation-listing">Stories</a></li>
-                                <li><a href="/home">Adopt a tree</a></li>
-                                <li><a href="/products">Contact us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header__right  mt-0 mt-md-5 mt-lg-5">
-                        <div class="header__actions">
-                            <ul>
-                                <li>
-                                    <a href="/cart">
-                                        <span>0</span> <!-- Replace with actual cart length -->
-                                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M24.2344 7H20.9258L14.9102 0.382812C14.6523 0.0820312 14.2227 0.0820312 13.9648 0.339844C13.6641 0.597656 13.6641 1.02734 13.9219 1.28516L19.0781 7H5.62891L10.7852 1.28516C11.043 1.02734 11.043 0.597656 10.7422 0.339844C10.4844 0.0820312 10.0547 0.0820312 9.79688 0.382812L3.78125 7H0.515625C0.214844 7 0 7.25781 0 7.51562V7.85938C0 8.16016 0.214844 8.375 0.515625 8.375H1.20312L2.49219 17.6133C2.62109 18.6445 3.48047 19.375 4.51172 19.375H20.1953C21.2266 19.375 22.0859 18.6445 22.2148 17.6133L23.5039 8.375H24.2344C24.4922 8.375 24.75 8.16016 24.75 7.85938V7.51562C24.75 7.25781 24.4922 7 24.2344 7ZM20.8828 17.4414C20.7969 17.7852 20.5391 18 20.1953 18H4.51172C4.16797 18 3.91016 17.7852 3.82422 17.4414L2.57812 8.375H22.1289L20.8828 17.4414ZM13.0625 10.7812C13.0625 10.4375 12.7188 10.0938 12.375 10.0938C11.9883 10.0938 11.6875 10.4375 11.6875 10.7812V15.5938C11.6875 15.9805 11.9883 16.2812 12.375 16.2812C12.7188 16.2812 13.0625 15.9805 13.0625 15.5938V10.7812ZM17.875 10.7812C17.875 10.4375 17.5312 10.0938 17.1875 10.0938C16.8008 10.0938 16.5 10.4375 16.5 10.7812V15.5938C16.5 15.9805 16.8008 16.2812 17.1875 16.2812C17.5312 16.2812 17.875 15.9805 17.875 15.5938V10.7812ZM8.25 10.7812C8.25 10.4375 7.90625 10.0938 7.5625 10.0938C7.17578 10.0938 6.875 10.4375 6.875 10.7812V15.5938C6.875 15.9805 7.17578 16.2812 7.5625 16.2812C7.90625 16.2812 8.25 15.9805 8.25 15.5938V10.7812Z" fill="#7FB432" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span>
-                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21.8281 21.4609L16.2852 15.918C16.1992 15.832 16.0703 15.7891 15.9414 15.7891H15.4688C16.9727 14.1562 17.875 12.0508 17.875 9.6875C17.875 4.78906 13.8359 0.75 8.9375 0.75C3.99609 0.75 0 4.78906 0 9.6875C0 14.6289 3.99609 18.625 8.9375 18.625C11.2578 18.625 13.4062 17.7227 14.9961 16.2617V16.6914C14.9961 16.8633 15.0391 16.9922 15.125 17.0781L20.668 22.6211C20.8828 22.8359 21.1836 22.8359 21.3984 22.6211L21.8281 22.1914C22.043 21.9766 22.043 21.6758 21.8281 21.4609ZM8.9375 17.25C4.72656 17.25 1.375 13.8984 1.375 9.6875C1.375 5.51953 4.72656 2.125 8.9375 2.125C13.1055 2.125 16.5 5.51953 16.5 9.6875C16.5 13.8984 13.1055 17.25 8.9375 17.25Z" fill="#7FB432" />
-                                        </svg>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="header__button">
-                            <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
-                                <span class="btn__text">donate now</span>
-                                <i class="fa-solid fa-heart btn__icon"></i>
-                                <span class="it-btn__inner">
-                                    <span class="it-btn__blobs">
-                                        <span class="it-btn__blob"></span>
-                                        <span class="it-btn__blob"></span>
-                                        <span class="it-btn__blob"></span>
-                                        <span class="it-btn__blob"></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<header class="header-custom border-0 sticky-top">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <!-- Logo Section -->
+            <div class="col-auto pb-3">
+                <a href="/home" class="header-logo">
+                    <img src="assets/images/logos/logo.png" alt="Sponsor a Tree" class="header__logo__image" width="200" />
+                    
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="col-auto d-none d-lg-flex">
+                <nav class="main-nav mainMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about-us.html" class="nav-link">About</a></li>
+                        <li><a href="stories.html" class="nav-link">Stories</a></li>
+                        <li><a href="/adopt" class="nav-link">Adopt a Tree</a></li>
+                        <li><a href="/contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Action Buttons -->
+              <div class="col-auto d-flex align-items-center">
+                <div class="header__actions me-3 pt-3">
+                  <ul>
+                      <li>
+                          <a href="/cart">
+                              <span>0</span> <!-- Replace with actual cart length -->
+                              <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M24.2344 7H20.9258L14.9102 0.382812C14.6523 0.0820312 14.2227 0.0820312 13.9648 0.339844C13.6641 0.597656 13.6641 1.02734 13.9219 1.28516L19.0781 7H5.62891L10.7852 1.28516C11.043 1.02734 11.043 0.597656 10.7422 0.339844C10.4844 0.0820312 10.0547 0.0820312 9.79688 0.382812L3.78125 7H0.515625C0.214844 7 0 7.25781 0 7.51562V7.85938C0 8.16016 0.214844 8.375 0.515625 8.375H1.20312L2.49219 17.6133C2.62109 18.6445 3.48047 19.375 4.51172 19.375H20.1953C21.2266 19.375 22.0859 18.6445 22.2148 17.6133L23.5039 8.375H24.2344C24.4922 8.375 24.75 8.16016 24.75 7.85938V7.51562C24.75 7.25781 24.4922 7 24.2344 7ZM20.8828 17.4414C20.7969 17.7852 20.5391 18 20.1953 18H4.51172C4.16797 18 3.91016 17.7852 3.82422 17.4414L2.57812 8.375H22.1289L20.8828 17.4414ZM13.0625 10.7812C13.0625 10.4375 12.7188 10.0938 12.375 10.0938C11.9883 10.0938 11.6875 10.4375 11.6875 10.7812V15.5938C11.6875 15.9805 11.9883 16.2812 12.375 16.2812C12.7188 16.2812 13.0625 15.9805 13.0625 15.5938V10.7812ZM17.875 10.7812C17.875 10.4375 17.5312 10.0938 17.1875 10.0938C16.8008 10.0938 16.5 10.4375 16.5 10.7812V15.5938C16.5 15.9805 16.8008 16.2812 17.1875 16.2812C17.5312 16.2812 17.875 15.9805 17.875 15.5938V10.7812ZM8.25 10.7812C8.25 10.4375 7.90625 10.0938 7.5625 10.0938C7.17578 10.0938 6.875 10.4375 6.875 10.7812V15.5938C6.875 15.9805 7.17578 16.2812 7.5625 16.2812C7.90625 16.2812 8.25 15.9805 8.25 15.5938V10.7812Z" fill="#7FB432" />
+                              </svg>
+                          </a>
+                      </li>
+                      <li>
+                          <span>
+                              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M21.8281 21.4609L16.2852 15.918C16.1992 15.832 16.0703 15.7891 15.9414 15.7891H15.4688C16.9727 14.1562 17.875 12.0508 17.875 9.6875C17.875 4.78906 13.8359 0.75 8.9375 0.75C3.99609 0.75 0 4.78906 0 9.6875C0 14.6289 3.99609 18.625 8.9375 18.625C11.2578 18.625 13.4062 17.7227 14.9961 16.2617V16.6914C14.9961 16.8633 15.0391 16.9922 15.125 17.0781L20.668 22.6211C20.8828 22.8359 21.1836 22.8359 21.3984 22.6211L21.8281 22.1914C22.043 21.9766 22.043 21.6758 21.8281 21.4609ZM8.9375 17.25C4.72656 17.25 1.375 13.8984 1.375 9.6875C1.375 5.51953 4.72656 2.125 8.9375 2.125C13.1055 2.125 16.5 5.51953 16.5 9.6875C16.5 13.8984 13.1055 17.25 8.9375 17.25Z" fill="#7FB432" />
+                              </svg>
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+                <div class="header__button">
+                  <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
+                      <span class="btn__text">donate now</span>
+                      <i class="fa-solid fa-heart btn__icon" style="color:white !important"></i>
+                      <span class="it-btn__inner">
+                          <span class="it-btn__blobs">
+                              <span class="it-btn__blob"></span>
+                              <span class="it-btn__blob"></span>
+                              <span class="it-btn__blob"></span>
+                              <span class="it-btn__blob"></span>
+                          </span>
+                      </span>
+                  </a>
+              </div>
             </div>
         </div>
     </div>
@@ -85,7 +87,7 @@
 
     <div class="container container--custom">
         <div class="row align-items-center justify-content-between">
-            <div class="col-xl-6 col-lg-8 mb-30">
+            <div class="col-xl-6 col-lg-8 ">
                 <div class="hero__content">
                     <div>
                         <span class="hero__title hero__title--small wow animate__fadeInUp animate__animated"
@@ -103,11 +105,11 @@
                            Adopt a tree, connect with nature, and make a lasting impact on the environment. 
                         </p>
                     </div>
-                    <div>
+                    <div class="text-center text-md-start">
                         <a href="/donation-listing" class="btn btn--styleOne btn--primary it-btn wow animate__fadeInUp animate__animated" 
                            data-wow-duration="1200ms" data-wow-delay="500ms">
                             <span class="btn__text">Adopt a Tree Today</span>
-                            <i class="fa-solid fa-heart btn__icon"></i>
+                            <i class="fa-solid fa-heart btn__icon" style="color:white !important"></i>
                             <span class="it-btn__inner">
                                 <span class="it-btn__blobs">
                                     <span class="it-btn__blob"></span>
@@ -130,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="col-xl-6 mb-30">
+            <div class="col-xl-6 mt-5 mt-md-0">
                 <div>
                     <figure class="hero__figure wow animate__zoomIn animate__animated" data-wow-duration="1200ms" data-wow-delay="600ms">
                         <img src="assets/images/shapes/tree.png" alt="Gainioz Man" class="hero__figure__thumbs" />
@@ -143,7 +145,6 @@
 </section>
 <!-- About Section -->
 <section class="about">
-    <img class="about__shape about__shape--one" src="assets/images/shapes/love-shape3.svg" alt="Gainioz Shape" />
     <img class="about__shape about__shape--two" src="assets/images/shapes/love-shape4.svg" alt="Gainioz Shape" />
     <img class="about__shape about__shape--three" src="assets/images/shapes/love-shape5.svg" alt="Gainioz Shape" />
     <div class="aboutArea aboutArea--padding position-relative">
@@ -156,7 +157,7 @@
             <div class="row justify-content-end">
                 <div class="col-lg-6 mb-30">
                     <div class="aboutContent">
-                        <div class="sectionTitle mb-20">
+                        <div class="sectionTitle mb-20 text-center text-md-start">
                             <span class="sectionTitle__small">
                                 <i class="fa-solid fa-heart btn__icon"></i>
                                 Sponsor a tree
@@ -168,27 +169,31 @@
 
                         </p>
                         <span class="aboutContent__quote">Join our community and mark your legacy</span>
-                        <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
-                            <span class="btn__text">donate now</span>
-                            <i class="fa-solid fa-heart btn__icon"></i>
-                            <span class="it-btn__inner">
-                                <span class="it-btn__blobs">
-                                    <span class="it-btn__blob"></span>
-                                    <span class="it-btn__blob"></span>
-                                    <span class="it-btn__blob"></span>
-                                    <span class="it-btn__blob"></span>
+                        <div class="text-center text-md-start">
+                            <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
+                                <span class="btn__text">donate now</span>
+                                <i class="fa-solid fa-heart btn__icon" style="color:white !important"></i>
+                                <span class="it-btn__inner">
+                                    <span class="it-btn__blobs">
+                                        <span class="it-btn__blob"></span>
+                                        <span class="it-btn__blob"></span>
+                                        <span class="it-btn__blob"></span>
+                                        <span class="it-btn__blob"></span>
+                                    </span>
                                 </span>
-                            </span>
-                            <svg class="it-btn__animation" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                <defs>
-                                    <filter id="goo">
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                    </filter>
-                                </defs>
-                            </svg>
-                        </a>
+                                <svg class="it-btn__animation" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <defs>
+                                        <filter id="goo">
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -277,7 +282,7 @@
                             </h3>
                             <a class="btn btn--styleOne btn--black it-btn wow animate__fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms" href="/donation-listing">
                                 <span class="btn__text">BECOME A SPONSOR</span>
-                                <i class="fa-solid fa-heart btn__icon"></i>
+                                <i class="fa-solid fa-heart btn__icon" style="color:white !important"></i>
                                 <span class="it-btn__inner">
                                     <span class="it-btn__blobs">
                                         <span class="it-btn__blob"></span>
@@ -307,7 +312,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <div class="sectionTitle mb-65">
+          <div class="sectionTitle text-center text-md-start">
             <span class="sectionTitle__small">
               <i class="fa-solid fa-heart btn__icon"></i>
               Read our latest
@@ -315,9 +320,9 @@
             <h2 class="sectionTitle__big">Featured Stories</h2>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="sliderNav sliderNav--style1 mb-65">
-            <button class="sliderNav__btn btn-prev border-0" type="button" data-bs-target="#donationCarousel" data-bs-slide="prev">
+        <div class="col-lg-6 ">
+          <div class="sliderNav sliderNav--style1 justify-content-center justify-content-md-end">
+            <button class="sliderNav__btn btn-prev border-0 " type="button" data-bs-target="#donationCarousel" data-bs-slide="prev">
               <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M5.75 9.40625L6.375 8.78125C6.5 8.625 6.5 8.40625 6.34375 8.25L3.84375 5.8125H14.625C14.8125 5.8125 15 5.65625 15 5.4375V4.5625C15 4.375 14.8125 4.1875 14.625 4.1875H3.84375L6.34375 1.78125C6.5 1.625 6.5 1.40625 6.375 1.25L5.75 0.625C5.59375 0.5 5.375 0.5 5.21875 0.625L1.09375 4.75C0.96875 4.90625 0.96875 5.125 1.09375 5.28125L5.21875 9.40625C5.375 9.53125 5.59375 9.53125 5.75 9.40625Z"
@@ -394,9 +399,9 @@
           </div>
   
           <!-- Second Slide (containing 3 donation cards) -->
-          <div class="carousel-item">
+          <div class="carousel-item ">
             <div class="row">
-              <div class="col-md-4 p-5 border border-end-0">
+              <div class="col-md-4 p-5 border border-end-0 ">
                 <div class="featureBlock">
                   <figure class="featureBlock__thumb">
                     <a href="/donation-details/slug" class="featureBlock__thumb__link">
@@ -552,7 +557,7 @@
 <div class="mvv ">
     <div class="container">
         <div class="row">
-            <span class="sectionTitle__small justify-content-center">
+            <span class="sectionTitle__small text-center">
                 <i class="fa-solid fa-heart btn__icon"></i>
                 Sponsor a tree
             </span>
@@ -642,7 +647,7 @@
 <section class="portfolio">
     <div class="container-fluid p-0 overflow-hidden">
         <div class="row g-0">
-            <span class="sectionTitle__small justify-content-center">
+            <span class="sectionTitle__small justify-content-center text-center ">
                 <i class="fa-solid fa-heart btn__icon"></i>
                 Sponsor a tree
             </span>
@@ -730,9 +735,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <!-- Blog Block 1 -->
-            <div class="col">
+            <div class="col-lg-3">
                 <div class="blogBlock some-style-class mb-60">
                     <figure class="blogBlock__figure">
                         <a href="/blog-details/slug" class="blogBlock__figure__link" onclick="window.scrollTo(10, 0);">
@@ -757,7 +762,7 @@
                 </div>
             </div>
             <!-- Blog Block 2 -->
-            <div class="col">
+            <div class="col-lg-3">
                 <div class="blogBlock some-style-class mb-60">
                     <figure class="blogBlock__figure">
                         <a href="/blog-details/slug" class="blogBlock__figure__link" onclick="window.scrollTo(10, 0);">
@@ -781,7 +786,7 @@
                 </div>
             </div>
             <!-- Blog Block 3 -->
-            <div class="col">
+            <div class="col-lg-3">
                 <div class="blogBlock some-style-class mb-60">
                     <figure class="blogBlock__figure">
                         <a href="/blog-details/slug" class="blogBlock__figure__link" onclick="window.scrollTo(10, 0);">
@@ -1002,7 +1007,7 @@
             speed: 1500,
             slidesToShow: 6,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             arrows: false,
             responsive: [
                 {

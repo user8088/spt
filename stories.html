@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to your CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <header class="header-custom border-0 sticky-top">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <div class="col-auto pb-3">
+                    <a href="/home" class="header-logo">
+                        <img src="assets/images/logos/logo.png" alt="Sponsor a Tree" class="header__logo__image" width="200" />
+                        
+                    </a>
+                </div>
+    
+                <!-- Navigation Menu -->
+                <div class="col-auto d-none d-lg-flex">
+                    <nav class="main-nav mainMenu">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-link">Home</a></li>
+                            <li><a href="about-us.html" class="nav-link">About</a></li>
+                            <li><a href="stories.html" class="nav-link">Stories</a></li>
+                            <li><a href="/adopt" class="nav-link">Adopt a Tree</a></li>
+                            <li><a href="/contact" class="nav-link">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <!-- Action Buttons -->
+                  <div class="col-auto d-flex align-items-center">
+                    <div class="header__actions me-3 pt-3">
+                      <ul>
+                          <li>
+                              <a href="/cart">
+                                  <span>0</span> <!-- Replace with actual cart length -->
+                                  <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M24.2344 7H20.9258L14.9102 0.382812C14.6523 0.0820312 14.2227 0.0820312 13.9648 0.339844C13.6641 0.597656 13.6641 1.02734 13.9219 1.28516L19.0781 7H5.62891L10.7852 1.28516C11.043 1.02734 11.043 0.597656 10.7422 0.339844C10.4844 0.0820312 10.0547 0.0820312 9.79688 0.382812L3.78125 7H0.515625C0.214844 7 0 7.25781 0 7.51562V7.85938C0 8.16016 0.214844 8.375 0.515625 8.375H1.20312L2.49219 17.6133C2.62109 18.6445 3.48047 19.375 4.51172 19.375H20.1953C21.2266 19.375 22.0859 18.6445 22.2148 17.6133L23.5039 8.375H24.2344C24.4922 8.375 24.75 8.16016 24.75 7.85938V7.51562C24.75 7.25781 24.4922 7 24.2344 7ZM20.8828 17.4414C20.7969 17.7852 20.5391 18 20.1953 18H4.51172C4.16797 18 3.91016 17.7852 3.82422 17.4414L2.57812 8.375H22.1289L20.8828 17.4414ZM13.0625 10.7812C13.0625 10.4375 12.7188 10.0938 12.375 10.0938C11.9883 10.0938 11.6875 10.4375 11.6875 10.7812V15.5938C11.6875 15.9805 11.9883 16.2812 12.375 16.2812C12.7188 16.2812 13.0625 15.9805 13.0625 15.5938V10.7812ZM17.875 10.7812C17.875 10.4375 17.5312 10.0938 17.1875 10.0938C16.8008 10.0938 16.5 10.4375 16.5 10.7812V15.5938C16.5 15.9805 16.8008 16.2812 17.1875 16.2812C17.5312 16.2812 17.875 15.9805 17.875 15.5938V10.7812ZM8.25 10.7812C8.25 10.4375 7.90625 10.0938 7.5625 10.0938C7.17578 10.0938 6.875 10.4375 6.875 10.7812V15.5938C6.875 15.9805 7.17578 16.2812 7.5625 16.2812C7.90625 16.2812 8.25 15.9805 8.25 15.5938V10.7812Z" fill="#7FB432" />
+                                  </svg>
+                              </a>
+                          </li>
+                          <li>
+                              <span>
+                                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M21.8281 21.4609L16.2852 15.918C16.1992 15.832 16.0703 15.7891 15.9414 15.7891H15.4688C16.9727 14.1562 17.875 12.0508 17.875 9.6875C17.875 4.78906 13.8359 0.75 8.9375 0.75C3.99609 0.75 0 4.78906 0 9.6875C0 14.6289 3.99609 18.625 8.9375 18.625C11.2578 18.625 13.4062 17.7227 14.9961 16.2617V16.6914C14.9961 16.8633 15.0391 16.9922 15.125 17.0781L20.668 22.6211C20.8828 22.8359 21.1836 22.8359 21.3984 22.6211L21.8281 22.1914C22.043 21.9766 22.043 21.6758 21.8281 21.4609ZM8.9375 17.25C4.72656 17.25 1.375 13.8984 1.375 9.6875C1.375 5.51953 4.72656 2.125 8.9375 2.125C13.1055 2.125 16.5 5.51953 16.5 9.6875C16.5 13.8984 13.1055 17.25 8.9375 17.25Z" fill="#7FB432" />
+                                  </svg>
+                              </span>
+                          </li>
+                      </ul>
+                  </div>
+                    <div class="header__button">
+                      <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
+                          <span class="btn__text">donate now</span>
+                          <i class="fa-solid fa-heart btn__icon" style="color:white !important"></i>
+                          <span class="it-btn__inner">
+                              <span class="it-btn__blobs">
+                                  <span class="it-btn__blob"></span>
+                                  <span class="it-btn__blob"></span>
+                                  <span class="it-btn__blob"></span>
+                                  <span class="it-btn__blob"></span>
+                              </span>
+                          </span>
+                      </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page-title about-section pt-5 pb-5">
+        <div class="container text-center">
+            <h1 style="color:white;">Stories</h1>
+            <p style="color:white;">Home/Stories</p>
+        </div>
+    </section>
+    <section class="stories pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 scrollable">
+                    <div class="innerWrapper shadow-sm">
+                        <div class="donationDetails storiesDetails">
+                            <div class="donationDetails__header mb-45">
+                                <figure class="thumb ">
+                                    <img class="img-fluid" src="assets/images/blog/blog1.jpg" alt="Gainioz blog" class="image-saturation" />
+                                </figure>
+                            </div>
+                            <div class="d-flex align-items-center pb-3">
+                                <img src="assets/images/auth/man1.png" width="65" class="me-3">
+                                <p class="mb-0">James Morgan</p>
+                            </div>
+                            
+                            <h4 class="donationDetails__heading ">Tree of Life, Tree of Hope</h4>
+                            <p class="donationDetails__text storiesDetails__text mb-30">
+                                We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum rhoncus, dolor eget viverra pretium...
+                            </p>
+                            <p class="featureBlock__text" ><a href="#" style="color: #EB9309 ;">Read More</a></p>
+                            <div class="blogDetails-socialTags mb-35">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-10">
+                                        <div class="blogDetails-tags">
+                                            <h3 class="blogDetails-title__heading text-uppercase ">Tags</h3>
+                                            <ul class="pt-3">
+                                                <li><a href="/blog">Personal</a></li>
+                                                <li><a href="/blog">Go Green</a></li>
+                                                <li><a href="/blog">Dedication</a></li>
+                                                <li><a href="/blog">Forest</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="innerWrapper shadow-sm mt-3">
+                        <div class="donationDetails storiesDetails">
+                            <div class="donationDetails__header mb-45">
+                                <figure class="thumb ">
+                                    <img class="img-fluid" src="assets/images/portfolio/story2.jpg" alt="Gainioz blog" class="image-saturation" />
+                                </figure>
+                            </div>
+                            <div class="d-flex align-items-center pb-3">
+                                <img src="assets/images/auth/man1.png" width="65" class="me-3">
+                                <p class="mb-0">James Morgan</p>
+                            </div>
+                            
+                            <h4 class="donationDetails__heading ">My Leaves of Laughter</h4>
+                            <p class="donationDetails__text storiesDetails__text mb-30">
+                                We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum rhoncus, dolor eget viverra pretium...
+                            </p>
+                            <p class="featureBlock__text" ><a href="#" style="color: #EB9309 ;">Read More</a></p>
+                            <div class="blogDetails-socialTags mb-35">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-10">
+                                        <div class="blogDetails-tags">
+                                            <h3 class="blogDetails-title__heading text-uppercase ">Tags</h3>
+                                            <ul class="pt-3">
+                                                <li><a href="/blog">Personal</a></li>
+                                                <li><a href="/blog">Go Green</a></li>
+                                                <li><a href="/blog">Dedication</a></li>
+                                                <li><a href="/blog">Forest</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="innerWrapper shadow-sm mt-3">
+                        <div class="donationDetails storiesDetails">
+                            <div class="donationDetails__header mb-45">
+                                <figure class="thumb ">
+                                    <img class="img-fluid" src="assets/images/portfolio/story3.png" alt="Gainioz blog" class="image-saturation" />
+                                </figure>
+                            </div>
+                            <div class="d-flex align-items-center pb-3">
+                                <img src="assets/images/auth/man1.png" width="65" class="me-3">
+                                <p class="mb-0">James Morgan</p>
+                            </div>
+                            
+                            <h4 class="donationDetails__heading ">Tree of Life, Tree of Hope</h4>
+                            <p class="donationDetails__text storiesDetails__text mb-30">
+                                We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum rhoncus, dolor eget viverra pretium...
+                            </p>
+                            <p class="featureBlock__text" ><a href="#" style="color: #EB9309 ;">Read More</a></p>
+                            <div class="blogDetails-socialTags mb-35">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-10">
+                                        <div class="blogDetails-tags">
+                                            <h3 class="blogDetails-title__heading text-uppercase ">Tags</h3>
+                                            <ul class="pt-3">
+                                                <li><a href="/blog">Personal</a></li>
+                                                <li><a href="/blog">Go Green</a></li>
+                                                <li><a href="/blog">Dedication</a></li>
+                                                <li><a href="/blog">Forest</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="innerWrapper shadow-sm mt-3">
+                        <div class="donationDetails storiesDetails">
+                            <div class="donationDetails__header mb-45">
+                                <figure class="thumb ">
+                                    <img class="img-fluid" src="assets/images/portfolio/story3.png" alt="Gainioz blog" class="image-saturation" />
+                                </figure>
+                            </div>
+                            <div class="d-flex align-items-center pb-3">
+                                <img src="assets/images/auth/man1.png" width="65" class="me-3">
+                                <p class="mb-0">James Morgan</p>
+                            </div>
+                            
+                            <h4 class="donationDetails__heading ">Tree of Life, Tree of Hope</h4>
+                            <p class="donationDetails__text storiesDetails__text mb-30">
+                                We have covered many special events such as fireworks, fairs, parades, races, walks, awards ceremonies, fashion shows, sporting events, and even a memorial service. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate vestibulum rhoncus, dolor eget viverra pretium...
+                            </p>
+                            <p class="featureBlock__text" ><a href="#" style="color: #EB9309 ;">Read More</a></p>
+                            <div class="blogDetails-socialTags mb-35">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-10">
+                                        <div class="blogDetails-tags">
+                                            <h3 class="blogDetails-title__heading text-uppercase ">Tags</h3>
+                                            <ul class="pt-3">
+                                                <li><a href="/blog">Personal</a></li>
+                                                <li><a href="/blog">Go Green</a></li>
+                                                <li><a href="/blog">Dedication</a></li>
+                                                <li><a href="/blog">Forest</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <aside class="col-lg-4">
+                    <!-- Search Bar -->
+                    <div class="mb-4">
+                        <h4 class="mb-3">Search</h4>
+                        <form action="#" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." style="border-color: #EB9309;">
+                                <button class="btn btn-primary" type="submit" style="background-color: #EB9309; border:none;">
+                                    <i class="fas fa-search" ></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                
+                    <!-- Categories -->
+                    <div class="mb-4">
+                        <h4 class="mb-3">Categories</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="border-color: #EB9309;">
+                                Community Stories
+                                <span class="badge  rounded-pill category-badge">10</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="border-color: #EB9309;">
+                                Personal Stories
+                                <span class="badge  rounded-pill category-badge">8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" style="border-color: #EB9309;">
+                                Donation Impacts
+                                <span class="badge  rounded-pill category-badge">12</span>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- Recent Posts -->
+                    <div class="mb-4">
+                        <h4 class="mb-3">Recent Posts</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none" style="color:gray;">
+                                    <img src="assets/images/blog/blog2.jpg" alt="Post Thumbnail" class="me-3" style="width: 200px; height: 100px; object-fit: cover;  display:block;">
+                                    <span>A Green Future</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none" style="color:gray;">
+                                    <img src="assets/images/blog/blog3.jpg" alt="Post Thumbnail" class="me-3" style="width: 200px; height: 100px; object-fit: cover; display:block;">
+                                    <span>Remembering Our Daughter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" style="color:gray;">
+                                    <img src="assets/images/blog/blog1.jpg" alt="Post Thumbnail" class="me-3" style="width: 200px; height: 100px; object-fit: cover;  display:block;">
+                                    <span>My Garden of Eden</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- Tags -->
+                    <!-- <div class="mb-4">
+                        <h4 class="mb-3">Tags</h4>
+                        <div class="blogDetails-tags">
+                            <ul class="pt-3">
+                                <li><a href="/blog">Personal</a></li>
+                                <li><a href="/blog">Go Green</a></li>
+                                <li><a href="/blog">Dedication</a></li>
+                                <li><a href="/blog">Forest</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </aside>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

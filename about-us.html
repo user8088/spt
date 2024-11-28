@@ -6,75 +6,77 @@
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to your CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: whitesmoke;">
     <!-- Header Section -->
-    <header class="header--styleFour">
-        <div class="container container--custom">
-            <div class="row">
-                <div class="col-12">
-                    <div class="header__wrapper">
-                        <div class="header__logo">
-                            <a href="/home" class="header__logo__link">
-                                <img src="assets/images/logos/logo.png" alt="Gainioz" class="header__logo__image" width="200" >
+    <header class="header-custom border-0 sticky-top">
+      <div class="container">
+          <div class="row align-items-center justify-content-between">
+              <!-- Logo Section -->
+              <div class="col-auto pb-3">
+                  <a href="/home" class="header-logo">
+                      <img src="assets/images/logos/logo.png" alt="Sponsor a Tree" class="header__logo__image" width="200" />
+                      
+                  </a>
+              </div>
+  
+              <!-- Navigation Menu -->
+              <div class="col-auto d-none d-lg-flex">
+                  <nav class="main-nav mainMenu">
+                      <ul class="nav-list">
+                          <li><a href="index.html" class="nav-link">Home</a></li>
+                          <li><a href="about-us.html" class="nav-link">About</a></li>
+                          <li><a href="stories.html" class="nav-link">Stories</a></li>
+                          <li><a href="/adopt" class="nav-link">Adopt a Tree</a></li>
+                          <li><a href="/contact" class="nav-link">Contact Us</a></li>
+                      </ul>
+                  </nav>
+              </div>
+  
+              <!-- Action Buttons -->
+                <div class="col-auto d-flex align-items-center">
+                  <div class="header__actions me-3 pt-3">
+                    <ul>
+                        <li>
+                            <a href="/cart">
+                                <span>0</span> <!-- Replace with actual cart length -->
+                                <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.2344 7H20.9258L14.9102 0.382812C14.6523 0.0820312 14.2227 0.0820312 13.9648 0.339844C13.6641 0.597656 13.6641 1.02734 13.9219 1.28516L19.0781 7H5.62891L10.7852 1.28516C11.043 1.02734 11.043 0.597656 10.7422 0.339844C10.4844 0.0820312 10.0547 0.0820312 9.79688 0.382812L3.78125 7H0.515625C0.214844 7 0 7.25781 0 7.51562V7.85938C0 8.16016 0.214844 8.375 0.515625 8.375H1.20312L2.49219 17.6133C2.62109 18.6445 3.48047 19.375 4.51172 19.375H20.1953C21.2266 19.375 22.0859 18.6445 22.2148 17.6133L23.5039 8.375H24.2344C24.4922 8.375 24.75 8.16016 24.75 7.85938V7.51562C24.75 7.25781 24.4922 7 24.2344 7ZM20.8828 17.4414C20.7969 17.7852 20.5391 18 20.1953 18H4.51172C4.16797 18 3.91016 17.7852 3.82422 17.4414L2.57812 8.375H22.1289L20.8828 17.4414ZM13.0625 10.7812C13.0625 10.4375 12.7188 10.0938 12.375 10.0938C11.9883 10.0938 11.6875 10.4375 11.6875 10.7812V15.5938C11.6875 15.9805 11.9883 16.2812 12.375 16.2812C12.7188 16.2812 13.0625 15.9805 13.0625 15.5938V10.7812ZM17.875 10.7812C17.875 10.4375 17.5312 10.0938 17.1875 10.0938C16.8008 10.0938 16.5 10.4375 16.5 10.7812V15.5938C16.5 15.9805 16.8008 16.2812 17.1875 16.2812C17.5312 16.2812 17.875 15.9805 17.875 15.5938V10.7812ZM8.25 10.7812C8.25 10.4375 7.90625 10.0938 7.5625 10.0938C7.17578 10.0938 6.875 10.4375 6.875 10.7812V15.5938C6.875 15.9805 7.17578 16.2812 7.5625 16.2812C7.90625 16.2812 8.25 15.9805 8.25 15.5938V10.7812Z" fill="#7FB432" />
+                                </svg>
                             </a>
-                        </div>
-                        <div class="header__menu mt-0 mt-md-5 mt-lg-5">
-                            <nav class="mainMenu">
-                                <ul>
-                                    <li><a href="/home">Home</a></li>
-                                    <li><a href="about-us.html">About</a></li>
-                                    <li><a href="/donation-listing">Stories</a></li>
-                                    <li><a href="/home">Adopt a tree</a></li>
-                                    <li><a href="/products">Contact us</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header__right  mt-0 mt-md-5 mt-lg-5">
-                            <div class="header__actions">
-                                <ul>
-                                    <li>
-                                        <a href="/cart">
-                                            <span>0</span> <!-- Replace with actual cart length -->
-                                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M24.2344 7H20.9258L14.9102 0.382812C14.6523 0.0820312 14.2227 0.0820312 13.9648 0.339844C13.6641 0.597656 13.6641 1.02734 13.9219 1.28516L19.0781 7H5.62891L10.7852 1.28516C11.043 1.02734 11.043 0.597656 10.7422 0.339844C10.4844 0.0820312 10.0547 0.0820312 9.79688 0.382812L3.78125 7H0.515625C0.214844 7 0 7.25781 0 7.51562V7.85938C0 8.16016 0.214844 8.375 0.515625 8.375H1.20312L2.49219 17.6133C2.62109 18.6445 3.48047 19.375 4.51172 19.375H20.1953C21.2266 19.375 22.0859 18.6445 22.2148 17.6133L23.5039 8.375H24.2344C24.4922 8.375 24.75 8.16016 24.75 7.85938V7.51562C24.75 7.25781 24.4922 7 24.2344 7ZM20.8828 17.4414C20.7969 17.7852 20.5391 18 20.1953 18H4.51172C4.16797 18 3.91016 17.7852 3.82422 17.4414L2.57812 8.375H22.1289L20.8828 17.4414ZM13.0625 10.7812C13.0625 10.4375 12.7188 10.0938 12.375 10.0938C11.9883 10.0938 11.6875 10.4375 11.6875 10.7812V15.5938C11.6875 15.9805 11.9883 16.2812 12.375 16.2812C12.7188 16.2812 13.0625 15.9805 13.0625 15.5938V10.7812ZM17.875 10.7812C17.875 10.4375 17.5312 10.0938 17.1875 10.0938C16.8008 10.0938 16.5 10.4375 16.5 10.7812V15.5938C16.5 15.9805 16.8008 16.2812 17.1875 16.2812C17.5312 16.2812 17.875 15.9805 17.875 15.5938V10.7812ZM8.25 10.7812C8.25 10.4375 7.90625 10.0938 7.5625 10.0938C7.17578 10.0938 6.875 10.4375 6.875 10.7812V15.5938C6.875 15.9805 7.17578 16.2812 7.5625 16.2812C7.90625 16.2812 8.25 15.9805 8.25 15.5938V10.7812Z" fill="#7FB432" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M21.8281 21.4609L16.2852 15.918C16.1992 15.832 16.0703 15.7891 15.9414 15.7891H15.4688C16.9727 14.1562 17.875 12.0508 17.875 9.6875C17.875 4.78906 13.8359 0.75 8.9375 0.75C3.99609 0.75 0 4.78906 0 9.6875C0 14.6289 3.99609 18.625 8.9375 18.625C11.2578 18.625 13.4062 17.7227 14.9961 16.2617V16.6914C14.9961 16.8633 15.0391 16.9922 15.125 17.0781L20.668 22.6211C20.8828 22.8359 21.1836 22.8359 21.3984 22.6211L21.8281 22.1914C22.043 21.9766 22.043 21.6758 21.8281 21.4609ZM8.9375 17.25C4.72656 17.25 1.375 13.8984 1.375 9.6875C1.375 5.51953 4.72656 2.125 8.9375 2.125C13.1055 2.125 16.5 5.51953 16.5 9.6875C16.5 13.8984 13.1055 17.25 8.9375 17.25Z" fill="#7FB432" />
-                                            </svg>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="header__button">
-                                <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
-                                    <span class="btn__text">donate now</span>
-                                    <i class="fa-solid fa-heart btn__icon"></i>
-                                    <span class="it-btn__inner">
-                                        <span class="it-btn__blobs">
-                                            <span class="it-btn__blob"></span>
-                                            <span class="it-btn__blob"></span>
-                                            <span class="it-btn__blob"></span>
-                                            <span class="it-btn__blob"></span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li>
+                            <span>
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8281 21.4609L16.2852 15.918C16.1992 15.832 16.0703 15.7891 15.9414 15.7891H15.4688C16.9727 14.1562 17.875 12.0508 17.875 9.6875C17.875 4.78906 13.8359 0.75 8.9375 0.75C3.99609 0.75 0 4.78906 0 9.6875C0 14.6289 3.99609 18.625 8.9375 18.625C11.2578 18.625 13.4062 17.7227 14.9961 16.2617V16.6914C14.9961 16.8633 15.0391 16.9922 15.125 17.0781L20.668 22.6211C20.8828 22.8359 21.1836 22.8359 21.3984 22.6211L21.8281 22.1914C22.043 21.9766 22.043 21.6758 21.8281 21.4609ZM8.9375 17.25C4.72656 17.25 1.375 13.8984 1.375 9.6875C1.375 5.51953 4.72656 2.125 8.9375 2.125C13.1055 2.125 16.5 5.51953 16.5 9.6875C16.5 13.8984 13.1055 17.25 8.9375 17.25Z" fill="#7FB432" />
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </header>
-
+                  <div class="header__button">
+                    <a href="/donation-listing" class="btn btn--styleOne btn--secondary it-btn">
+                        <span class="btn__text">donate now</span>
+                        <i class="fa-solid fa-heart btn__icon" style="color:white !important"></i>
+                        <span class="it-btn__inner">
+                            <span class="it-btn__blobs">
+                                <span class="it-btn__blob"></span>
+                                <span class="it-btn__blob"></span>
+                                <span class="it-btn__blob"></span>
+                                <span class="it-btn__blob"></span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </header>
     <!-- Main Content -->
-    <main class="main about-page ">
+    <main class="main about-page " >
         <!-- Page Title -->
         <section class="page-title about-section pt-5 pb-5">
             <div class="container text-center">
@@ -85,31 +87,6 @@
 
         <!-- About Section -->
         <section class="about pt-5">
-            <div class="button text-center pb-5">
-                <a class="btn btn--styleOne btn--icon btn--icon2 it-btn" href="/donation-listing">
-                    <svg class="btn__icon" width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.869141 8.70508L1.45508 8.11914C1.60156 8.00195 1.80664 8.00195 1.95312 8.14844L4.23828 10.4922V0.414062C4.23828 0.208984 4.38477 0.0625 4.58984 0.0625H5.41016C5.58594 0.0625 5.76172 0.208984 5.76172 0.414062V10.4922L8.01758 8.14844C8.16406 8.00195 8.36914 8.00195 8.51562 8.11914L9.10156 8.70508C9.21875 8.85156 9.21875 9.05664 9.10156 9.20312L5.23438 13.0703C5.08789 13.1875 4.88281 13.1875 4.73633 13.0703L0.869141 9.20312C0.751953 9.05664 0.751953 8.85156 0.869141 8.70508Z" fill="#60646B" />
-                    </svg>
-                    <span class="it-btn__inner">
-                        <span class="it-btn__blobs">
-                            <span class="it-btn__blob"></span>
-                            <span class="it-btn__blob"></span>
-                            <span class="it-btn__blob"></span>
-                            <span class="it-btn__blob"></span>
-                        </span>
-                    </span>
-                    <svg class="it-btn__animation" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <defs>
-                            <filter>
-                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                            </filter>
-                        </defs>
-                    </svg>
-                </a>
-                
-            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -118,16 +95,17 @@
                                 <i class="fa-solid fa-heart btn__icon"></i>
                                 about foundation
                             </span>
-                            <h2 class="sectionTitle__big">We are always there when others need help</h2>
+                            <h2 class="sectionTitle__big">Nurturing a Greener Tomorrow</h2>
+                            <h5>At Leafund, we’re on a mission to make every tree a story of hope, resilience, and impact.</h5>
                         </div>
                     </div>
                     <div class="col-lg-10 mx-auto">
-                        <div class="aboutDetails text-center">
+                        <div class="aboutDetails " style="text-align: justify;">
                             <p class="aboutDetailsText mb-20">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                              Our platform empowers individuals and communities to sponsor and adopt trees, fostering a deeper connection with nature while contributing to environmental sustainability. Through Leafund, each tree becomes more than just a plant—it transforms into a living symbol of positive change, combating climate change, preserving biodiversity, and improving air quality.
                             </p>
                             <p class="aboutDetailsText mb-20">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                              We provide sponsors with real-time updates on their tree’s progress, allowing them to witness its growth and the impact it creates. Beyond planting, Leafund nurtures a global community of tree enthusiasts who share their stories, experiences, and tips on sustainable living. Together, we aim to build a greener, healthier future where every tree tells a story of humanity’s commitment to preserving the planet for generations to come. Join us in creating a legacy of resilience and hope, one tree at a time.
                             </p>
                         </div>
                     </div>
@@ -139,7 +117,7 @@
         <section class="about-tab">
             <!-- Replace with actual AboutTab content -->
             <div class="about position-relative">
-                <img src="images/map/map-about-tab.svg" alt="Gainioz" class="map-about-tab" />
+                <img src="assets/images/bg/pak.png" alt="Gainioz" class="map-about-tab" />
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
@@ -148,7 +126,7 @@
                         <ul class="nav nav-tabs justify-content-center" id="aboutTabs" role="tablist">
                           <li class="nav-item">
                             <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#content-1" type="button" role="tab">
-                              About Foundation
+                              Our Vision
                             </button>
                           </li>
                           <li class="nav-item">
@@ -158,7 +136,7 @@
                           </li>
                           <li class="nav-item">
                             <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#content-3" type="button" role="tab">
-                              Our Vision
+                              Our Work
                             </button>
                           </li>
                         </ul>
@@ -170,22 +148,20 @@
                               <div class="col-lg-10 mx-auto">
                                 <div class="aboutDetails text-center">
                                   <p class="aboutDetailsText mb-3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    At "Sponsor a Tree," we believe every tree represents growth, unity, and environmental rejuvenation. Through our innovative, tech-driven platform, we connect individuals with nature, fostering a profound bond between humanity and the earth. By empowering people to take action and embrace environmental stewardship, we aim to inspire a collective movement toward a more sustainable and harmonious future.
                                   </p>
-                                  <p class="aboutDetailsText mb-3">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                                  </p>
+                                  
                                 </div>
                                 <div class="aboutDetailsThumbs pt-5">
                                   <div class="row g-0 align-items-center">
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb1.jpg" alt="About Gainioz">
+                                    <div class="col-lg-3">
+                                      <img src="assets/images/about/1.png" alt="About Gainioz">
                                     </div>
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb2.jpg" alt="About Gainioz">
+                                    <div class="col-lg-6">
+                                      <img src="assets/images/about/big.png" alt="About Gainioz">
                                     </div>
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb3.jpg" alt="About Gainioz">
+                                    <div class="col-lg-3">
+                                      <img src="assets/images/about/2.png" alt="About Gainioz">
                                     </div>
                                   </div>
                                 </div>
@@ -198,24 +174,20 @@
                               <div class="col-lg-10 mx-auto">
                                 <div class="aboutDetailsThumbs">
                                   <div class="row g-0 align-items-center">
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb1.jpg" alt="About Gainioz">
+                                    <div class="col-lg-3">
+                                      <img src="assets/images/about/1.png" alt="About Gainioz">
                                     </div>
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb2.jpg" alt="About Gainioz">
+                                    <div class="col-lg-6">
+                                      <img src="assets/images/about/big.png" alt="About Gainioz">
                                     </div>
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb3.jpg" alt="About Gainioz">
+                                    <div class="col-lg-3">
+                                      <img src="assets/images/about/2.png" alt="About Gainioz">
                                     </div>
                                   </div>
                                 </div>
                                 <div class="aboutDetails text-center pt-5">
                                   <p class="aboutDetailsText mb-3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                  </p>
-                                  <p class="aboutDetailsText mb-3">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                                  </p>
+                                    Our misson is to enable individuals to adopt trees and make a tangible impact on the environment. Through our platform, you can sponsor a tree, track its growth using cutting-edge technology, and become part of a thriving community dedicated to preserving our planet. Every tree adoption contributes to reforestation, biodiversity, and a cleaner, greener world.</p>
                                 </div>
                               </div>
                             </div>
@@ -226,22 +198,18 @@
                               <div class="col-lg-10 mx-auto">
                                 <div class="aboutDetails text-center">
                                   <p class="aboutDetailsText mb-3">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                                  </p>
-                                  <p class="aboutDetailsText mb-3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                  </p>
+                                    We blend nature and technology to bring our mission to life. Each adopted tree receives a unique space with a personalized nameplate and geo-coordinates, allowing sponsors to follow their tree’s journey. Our platform uses data and GPS technology to ensure that every adoption is a meaningful, measurable contribution to reforestation and environmental health.</p>
                                 </div>
                                 <div class="aboutDetailsThumbs pt-5">
                                   <div class="row g-0 align-items-center">
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb1.jpg" alt="About Gainioz">
+                                    <div class="col-lg-3">
+                                      <img src="assets/images/about/1.png" alt="About Gainioz">
                                     </div>
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb2.jpg" alt="About Gainioz">
+                                    <div class="col-lg-6">
+                                      <img src="assets/images/about/big.png" alt="About Gainioz">
                                     </div>
-                                    <div class="col-lg-4">
-                                      <img src="images/about/aboutDetailsthumb3.jpg" alt="About Gainioz">
+                                    <div class="col-lg-3">
+                                      <img src="assets/images/about/2.png" alt="About Gainioz">
                                     </div>
                                   </div>
                                 </div>
@@ -258,40 +226,377 @@
         </section>
 
         <!-- Fun Fact Section -->
-        <section class="fun-fact">
-            <!-- Replace with actual FunFactSection content -->
-            <div>FunFactSection Content</div>
-        </section>
-
-        <div class="container">
+        <section class="fact fact--layout1 position-relative pt-125 pb-95">
+          <img src="../../images/map/map-fact.png" alt="Gainioz" class="fact__map position-absolute" />
+          <div class="container">
             <div class="row">
-                <div class="col-lg-9 mx-auto">
-                    <p class="aboutDetailsText mb-20 text-center">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                    </p>
+              <div class="col-lg-7 col-md-8 mx-auto">
+                <div class="sectionTitle text-center mb-65">
+                  <span class="sectionTitle__small justify-content-center">
+                    <i class="fa-solid fa-heart btn__icon"></i>
+                    You can make a change
+                  </span>
+                  <h2 class="sectionTitle__big">Together, we’re planting seeds of change</h2>
+                </div>
+              </div>
+            </div>
+            <div class="factWrapper">
+              <div class="row gx-50">
+                <div class="col-lg-4">
+                  <div class="factBlock factBlock--one">
+                    <h3 class="factBlock__heading">
+                      <span class="factBlock__number">5000</span>
+                      <span class="factBlock__ext">trees</span>
+                    </h3>
+                    <span class="factBlock__tag">Going Green</span>
+                    <p class="factBlock__text">We create a greener, healthier and a sustainable world.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="factBlock factBlock--two">
+                    <h3 class="factBlock__heading">
+                      <span class="factBlock__number">650</span>
+                      <span class="factBlock__ext">Stories</span>
+                    </h3>
+                    <span class="factBlock__tag">Your Story</span>
+                    <p class="factBlock__text">We help you create a legacy to remember & behold.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="factBlock factBlock--three">
+                    <h3 class="factBlock__heading">
+                      <span class="factBlock__number">100</span>
+                      <span class="factBlock__ext">Acres</span>
+                    </h3>
+                    <span class="factBlock__tag">Forest</span>
+                    <p class="factBlock__text">We reverse deforestration by replanting entire forests.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="factWrapper factWrapper--two">
+              <div class="row justify-content-center gx-50">
+                <div class="col-lg-4">
+                  <div class="factBlock factBlock--four">
+                    <h3 class="factBlock__heading">
+                      <span class="factBlock__number">16000</span>
+                      <span class="factBlock__ext">kg</span>
+                    </h3>
+                    <span class="factBlock__tag">Seeds</span>
+                    <p class="factBlock__text">We help local nonprofits access seeds, tools and training.</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="factBlock factBlock--five">
+                    <h3 class="factBlock__heading">
+                      <span class="factBlock__number">25</span>
+                      <span class="factBlock__ext">mln</span>
+                    </h3>
+                    <span class="factBlock__tag">Supporters</span>
+                    <p class="factBlock__text">We have a community across the globe with connecting stories.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Team Section -->
+        <section class="volunteersSection pb-120 pt-120">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="sectionTitle text-center mb-70">
+                          <span class="sectionTitle__small justify-content-center">
+                              <i class="fa-solid fa-heart btn__icon"></i>
+                              We Change Your Life & World
+                          </span>
+                          <h2 class="sectionTitle__big">Meet Our Volunteers</h2>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 mb-45">
+                      <div class="volunteerBlock text-center">
+                          <figure class="volunteerBlock__figure">
+                              <img class="volunteerBlock__figure__thumb" src="assets/images/auth/man1.png" alt="Gainioz Volunteers" />
+                          </figure>
+                          <div class="volunteerBlock__content">
+                              <h3 class="volunteerBlock__name text-uppercase text-center">
+                                  <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">Cameron Williamson</a>
+                              </h3>
+                              <div class="itSocial itSocial--volunteer">
+                                  <ul>
+                                      <li>
+                                          <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                              <i class="fab fa-facebook-f"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                              <i class="fab fa-twitter"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                              <i class="fab fa-instagram"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                              <i class="fab fa-linkedin-in"></i>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Repeat for other team members -->
+                  <div class="col-lg-3 col-md-6 mb-45">
+                    <div class="volunteerBlock text-center">
+                        <figure class="volunteerBlock__figure">
+                            <img class="volunteerBlock__figure__thumb" src="assets/images/auth/man1.png" alt="Gainioz Volunteers" />
+                        </figure>
+                        <div class="volunteerBlock__content">
+                            <h3 class="volunteerBlock__name text-uppercase text-center">
+                                <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">Cameron Williamson</a>
+                            </h3>
+                            <div class="itSocial itSocial--volunteer">
+                                <ul>
+                                    <li>
+                                        <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-45">
+                  <div class="volunteerBlock text-center">
+                      <figure class="volunteerBlock__figure">
+                          <img class="volunteerBlock__figure__thumb" src="assets/images/auth/man1.png" alt="Gainioz Volunteers" />
+                      </figure>
+                      <div class="volunteerBlock__content">
+                          <h3 class="volunteerBlock__name text-uppercase text-center">
+                              <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">Cameron Williamson</a>
+                          </h3>
+                          <div class="itSocial itSocial--volunteer">
+                              <ul>
+                                  <li>
+                                      <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                          <i class="fab fa-facebook-f"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                          <i class="fab fa-twitter"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                          <i class="fab fa-instagram"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                          <i class="fab fa-linkedin-in"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-45">
+                <div class="volunteerBlock text-center">
+                    <figure class="volunteerBlock__figure">
+                        <img class="volunteerBlock__figure__thumb" src="assets/images/auth/man1.png" alt="Gainioz Volunteers" />
+                    </figure>
+                    <div class="volunteerBlock__content">
+                        <h3 class="volunteerBlock__name text-uppercase text-center">
+                            <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">Cameron Williamson</a>
+                        </h3>
+                        <div class="itSocial itSocial--volunteer">
+                            <ul>
+                                <li>
+                                    <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/team-single/TEAM_SLUG" onclick="window.scrollTo(10, 0);">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Team Section -->
-        <section class="team-section">
-            <!-- Replace with actual TeamSection content -->
-            <div>TeamSection Content</div>
-        </section>
+            
+              </div>
+          </div>
+      </section>
+      
+        
     </main>
-
     <!-- Footer -->
-    <footer>
-        <!-- Replace with actual footer content -->
-        <div>Footer Content</div>
-    </footer>
-
-    <!-- Scrollbar -->
-    <div class="scrollbar">
-        <!-- Replace with actual Scrollbar content -->
-        <div>Scrollbar Content</div>
-    </div>
-
+    <footer class="footer footer--bg footer--styleOne pt-70 pb-40">
+      <img src="assets/images/shapes/footerShape2.png" alt="Gainioz Shape" class="footer__shape" />
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col">
+                  <div class="footer__logo">
+                      <img src="assets/images/logos/footer-logo.png" alt="Gainioz Logo" class="footer__logo__image" width="200" />
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="footer__social itSocial">
+                      <ul>
+                          <li>
+                              <a href="/" class="facebook" rel="nofollow">
+                                  <i class="fab fa-facebook-f"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/" class="twitter" rel="nofollow">
+                                  <i class="fab fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/" class="instagram" rel="nofollow">
+                                  <i class="fab fa-instagram"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/" class="linkedin" rel="nofollow">
+                                  <i class="fab fa-linkedin-in"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/" class="pinterest" rel="nofollow">
+                                  <i class="fab fa-pinterest-p"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12">
+                  <hr class="footer__line" />
+              </div>
+          </div>
+          <div class="row">
+              <div class="footer__middle pt-65 pb-35">
+                  <div class="row justify-content-between">
+                      <div class="col-lg-2 col-md-4 mb-30">
+                          <div class="footer__widget">
+                              <div class="footer__title">
+                                  <h2 class="footer__heading text-uppercase text-white">About us</h2>
+                              </div>
+                              <div class="footer__menu">
+                                  <ul>
+                                      <li><a href="/contact">Policy Priorities</a></li>
+                                      <li><a href="/contact">Careers</a></li>
+                                      <li><a href="/donation-listing">Internships</a></li>
+                                      <li><a href="/donation-listing">Financial Reports</a></li>
+                                      <li><a href="/contact">Contact Us</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 mb-30">
+                          <div class="footer__widget">
+                              <div class="footer__title">
+                                  <h2 class="footer__heading text-uppercase text-white">Support us</h2>
+                              </div>
+                              <div class="footer__menu">
+                                  <ul>
+                                      <li><a href="/donation-listing">Donate Now</a></li>
+                                      <li><a href="/products">Store</a></li>
+                                      <li><a href="/contact">Reports</a></li>
+                                      <li><a href="/contact">Press Releases</a></li>
+                                      <li><a href="/contact">Privacy & Policy</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 mb-30">
+                          <div class="footer__widget">
+                              <div class="footer__title">
+                                  <h2 class="footer__heading text-uppercase text-white">Quick Links</h2>
+                              </div>
+                              <div class="footer__menu">
+                                  <ul>
+                                      <li><a href="/">Home</a></li>
+                                      <li><a href="/about">About us</a></li>
+                                      <li><a href="/contact">Contact us</a></li>
+                                      <li><a href="/donation-listing">Donation</a></li>
+                                      <li><a href="/stories">Join Volunteer</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 mb-30">
+                          <form action="#" method="post" class="footer__newsletter">
+                              <div class="footer__title">
+                                  <h2 class="footer__heading text-uppercase text-white">News Letter</h2>
+                              </div>
+                              <div class="footer__newsletter__formGroup mb-20">
+                                  <input type="email" class="footer__newsletter__input" placeholder="Enter mail" />
+                                  <input class="footer__newsletter__button" type="submit" value="Subscribe" />
+                              </div>
+                              <div class="footer__newsletter__formGroup">
+                                  <input id="agree" type="checkbox" class="footer__newsletter__check form-check-input" />
+                                  <label class="footer__newsletter__label" for="agree">I agree that my submitted data is being collected and stored.</label>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="footer__bottom">
+                  <div class="row">
+                      <div class="col-12">
+                          <hr class="footer__line" />
+                      </div>
+                      <div class="col mb-20">
+                          <div class="footer__copyright pt-20">
+                              <p class="footer__copyright__text mb-0">Copyright@example 2024 all right received</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script src="scripts.js"></script> <!-- Add your JS file here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
