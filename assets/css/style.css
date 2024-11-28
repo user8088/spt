@@ -2042,7 +2042,7 @@ html {
 }
 
 .about-section{
-  background-image: ('../images/about/aboutbg.png');
+  background-image: ('./images/about/aboutbg.png');
   background-position: center;
   background-size: cover;
 }
