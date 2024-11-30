@@ -2057,7 +2057,7 @@ html {
 
 .mainMenu>ul {
   display: flex;
-  gap: 35px;
+ 
 }
 
 @media (max-width: 1199px) {
@@ -2087,9 +2087,9 @@ html {
 /* 3.1 Navigation */
 
 .mainMenu>ul>li>a {
-  font-size: 15px;
-  font-weight: 600;
-  color: #000;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #000 !important;
 
   position: relative;
 }
@@ -2595,6 +2595,7 @@ html {
   right: -8px;
   top: 0;
 }
+
 
 .header.sticky-on.sticky {
   position: fixed;
