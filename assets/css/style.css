@@ -2637,7 +2637,7 @@ html {
 }
 
 .donnerArea{
-    background-image: url('/assets/images/bg/pak.png');
+    background-image: url('../images/bg/pak.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
